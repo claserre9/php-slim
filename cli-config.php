@@ -1,0 +1,16 @@
+<?php
+
+// cli-config.php
+
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\Tools\Console\ConsoleRunner;
+use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
+
+use Slim\Container;
+
+/** @var Container $container */
+$container = require_once __DIR__ . '/bootstrap.php';
+
+ConsoleRunner::run(
+    new SingleManagerProvider($container->get(EntityManager::class))
+);

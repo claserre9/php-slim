@@ -1,0 +1,19 @@
+{
+    "name": "codespace/php-slim",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Clifford Laserre",
+            "email": "42743420+claserre9@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^3.1",
+        "symfony/cache": "^7.0",
+        "uma/dic": "^3.0"
+    }
+}
